@@ -10,4 +10,25 @@ When implementing a new feature or fixing a bug, please create a new pull reques
 
 ## First setup
 
-**[TODO 05/01/2018 @vanessa-cooper]:** _It's been a while since anyone ran a fresh copy of this repo. I think it's worth documenting the steps needed to install and run the repo on a new machine?_
+1. Create a directory and clone the repository to your local machine by running the following command inside the directory you just created.
+
+`git clone https://github.com/ObelusFamily/Anythink-Market-k8ozt.git .`
+
+2. Enter the project's root directory.
+
+`cd <folder-name>`
+
+3. Bring up the compose stack by running the following command.
+
+`docker compose up`
+
+4. When your containers are ready, check the backend container by clicking http://localhost:3000/api/ping
+
+> You should see the following response.
+> {"msg":"Pong! Seems like Everythink is working, great job!"}
+
+5. Check the frontend container by creating a user on http://localhost:3001/register
+
+> If you can create a user, your frontend and database containers are working properly.
+
+
